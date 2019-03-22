@@ -19,8 +19,8 @@ class LambdaDemo extends Component {
   render() {
     const {loading, msg, avatar} = this.state;
     return <div>
-      <button onClick={this.handleClick}>{loading ? 'Loading...' : 'Call Lambda'}</button><br/>
-      <span>{msg}</span>
+      <button onClick={this.handleClick}>{loading ? 'Loading...' : 'Call Lambda'}</button>
+      <p>{msg}</p>
       <div>
       {avatar ? <img src={avatar} alt="An avatar" /> : ''}
       </div>
