@@ -11,7 +11,8 @@ class LambdaDemo extends Component {
   handleClick = (e) => {
     e.preventDefault();
     this.setState({loading: true});
-    fetch('/.netlify/functions/hello?email=' + document.location.pathname.replace('/',''))
+    //fetch('/.netlify/functions/hello?email=' + document.location.pathname.replace('/',''))
+    fetch('/.netlify/functions/hello)
       .then(response => response.json())
       .then(json => this.setState({loading: false, msg: json.msg, avatar: json.avatar}));
   }
